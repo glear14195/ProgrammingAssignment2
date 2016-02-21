@@ -4,6 +4,7 @@
 ##makeCacheMatrix makes a special structure or object of sorts
 ##the object stores a matrix in x and the value of its inverse(if calculated already) in I
 ##if the inverse has never been computed, the value of I is null
+##if the value of the matrix is changed by using the set function, I is set to null
 
 makeCacheMatrix <- function(x = matrix()) {
         I <- NULL
