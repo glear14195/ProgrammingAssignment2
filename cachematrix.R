@@ -1,7 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+##Functions to make special cacheMatrix object and cache solve function
 
-## Write a short comment describing this function
+
 ##makeCacheMatrix makes a special structure or object of sorts
 ##the object stores a matrix in x and the value of its inverse(if calculated already) in I
 ##if the inverse has never been computed, the value of I is null
@@ -20,9 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
              getinv = getinv)
 }
 
-
-## Write a short comment describing this function
-##the solve function for cacheMatrix objects
+##cacheSolve is the solve function for cacheMatrix objects
 ##returns inverse value if found in x
 ##if inverse not computed already, it will be computed and stored in x
 ##ensures inverse not computed more than once for same matrix
