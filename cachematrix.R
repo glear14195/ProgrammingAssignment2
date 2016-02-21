@@ -1,11 +1,11 @@
 ##Functions to make special cacheMatrix object and cache solve function
 
 
-##makeCacheMatrix makes a special structure or object of sorts
+##makeCacheMatrix makes an object and returns a list containing functions to interact with object
 ##the object stores a matrix in x and the value of its inverse(if calculated already) in I
 ##if the inverse has never been computed, the value of I is null
 ##if the value of the matrix is changed by using the set function, I is set to null
-
+#the returned functions are set, get, setinv and getinv
 makeCacheMatrix <- function(x = matrix()) {
         I <- NULL
         set <- function(y) {
